@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jinyou1129-bit.github.io/seoul-bites-guide/sitemap.xml
