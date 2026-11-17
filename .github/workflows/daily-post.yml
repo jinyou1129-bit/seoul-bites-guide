@@ -1,1 +1,33 @@
-name: Daily Seoul food guideon:  schedule:    - cron: '0 0 * * *'  workflow_dispatch:permissions:  contents: writeconcurrency:  group: daily-seoul-food-guide  cancel-in-progress: falsejobs:  publish:    runs-on: ubuntu-latest    steps:      - uses: actions/checkout@v4        with:          ref: main      - uses: actions/setup-python@v5        with:          python-version: '3.12'      - name: Generate the next guide        run: python scripts/generate_post.py      - name: Commit and push changes        run: |          git config user.name 'github-actions[bot]'          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'          git add index.html sitemap.xml ./*.html          if git diff --cached --quiet; then            echo 'No changes to publish.'          else            git commit -m 'Publish daily Seoul food guide'            git push origin HEAD:main          fi
+name: Daily Seoul food guide
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-seoul-food-guide
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate the next guide
+        run: python scripts/generate_post.py
+      - name: Commit and push changes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html sitemap.xml ./*.html
+          if git diff --cached --quiet; then
+            echo 'No changes to publish.'
+          else
+            git commit -m 'Publish daily Seoul food guide'
+            git push origin HEAD:main
+          fi
