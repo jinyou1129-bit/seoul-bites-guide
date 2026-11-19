@@ -135,13 +135,19 @@
         if (note) note.hidden = ok;
       });
       var total = quiz.querySelectorAll('fieldset').length;
+      var answered = form.querySelectorAll('input[type=radio]:checked').length;
       result.hidden = false;
-      result.innerHTML = '<strong>' + right + ' / ' + total + ' correct.</strong> ' +
-        (right === total
-          ? 'You could order for the whole table. Next: <a href="./seoul-must-eat-dishes-index.html">the 15-dish price index</a>.'
-          : (missed[0]
-            ? 'Close. The guide that covers what you missed: <a href="' + missed[0] + '">open it →</a>'
-            : 'Pick an answer for each question and try again.'));
+      var head = '<strong>' + right + ' / ' + total + ' correct.</strong> ';
+      var tail;
+      if (answered < total) {
+        tail = 'You answered ' + answered + ' of ' + total + '. ' +
+          (missed[0] ? 'The guide for the first one you missed: <a href="' + missed[0] + '">open it →</a>' : '');
+      } else if (right === total) {
+        tail = 'You could order for the whole table. Next: <a href="./seoul-must-eat-dishes-index.html">the 15-dish price index</a>.';
+      } else {
+        tail = 'Close. The guide that covers what you missed: <a href="' + missed[0] + '">open it →</a>';
+      }
+      result.innerHTML = head + tail;
       result.focus();
     });
     quiz.querySelector('.quiz-reset').addEventListener('click', function () {
