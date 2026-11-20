@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/</loc>
@@ -74,6 +74,10 @@
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-must-eat-dishes-index.html</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/korean-fried-chicken-and-beer-guide.html</loc>
     <lastmod>2026-11-20</lastmod>
   </url>
 </urlset>
