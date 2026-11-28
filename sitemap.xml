@@ -1,8 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/about.html</loc>
@@ -10,7 +10,11 @@
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/advertise.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/best-korean-soups-and-stews-guide.html</loc>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/contact.html</loc>
@@ -18,7 +22,7 @@
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/food-tour-vs-cooking-class.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/gwangjang-market-food-guide.html</loc>
@@ -37,16 +41,28 @@
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/insadong-traditional-tea-houses.html</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/jongno-pocha-street-and-night-markets-guide.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/korean-bbq-meat-cuts-and-ordering-guide.html</loc>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/korean-convenience-store-food-hacks.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/korean-convenience-store-snacks.html</loc>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/korean-fried-chicken-and-beer-guide.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/majang-meat-market-hanwoo-guide.html</loc>
@@ -54,6 +70,14 @@
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/mangwon-market-food-guide.html</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/myeongdong-kbbq-pork-belly-hanwoo.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/myeongdong-korean-bbq-guide.html</loc>
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
@@ -69,6 +93,22 @@
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-breakfast-food-guide.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-chimaek-chicken-beer-combos.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-convenience-store-meal-guide.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-dessert-and-sweet-treats-guide.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-food-culture-and-etiquette-guide.html</loc>
     <lastmod>2026-11-20</lastmod>
   </url>
@@ -78,53 +118,26 @@
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-korean-barbecue-guide.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-korean-noodle-guide.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-must-eat-dishes-index.html</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/winter-street-food-and-desserts-guide.html</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-breakfast-food-guide.html</loc>
-    <lastmod>2026-11-24</lastmod>
-  </url>
-  <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/insadong-traditional-tea-houses.html</loc>
-    <lastmod>2026-11-25</lastmod>
-  </url>
-  <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/myeongdong-kbbq-pork-belly-hanwoo.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-21</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-traditional-markets-street-food-guide.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-vegetarian-vegan-without-fish-sauce.html</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-dessert-and-sweet-treats-guide.html</loc>
-  </url>
-  <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/korean-bbq-meat-cuts-and-ordering-guide.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/seoul-chimaek-chicken-beer-combos.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/best-korean-soups-and-stews-guide.html</loc>
-    <lastmod>2026-11-28</lastmod>
+    <loc>https://jinyou1129-bit.github.io/seoul-bites-guide/winter-street-food-and-desserts-guide.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
 </urlset>

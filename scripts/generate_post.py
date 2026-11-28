@@ -71,8 +71,13 @@ def main():
  (ROOT/name).write_text(render(topic,date),encoding='utf-8'); path.write_text(index.replace(marker,marker+card,1),encoding='utf-8'); ET.indent(tree,space='  '); tree.write(site,encoding='utf-8',xml_declaration=True)
  print('Published',name,'on',date)
  try:
-  import add_engage
+  import add_engage, add_seo_meta, add_structured_data, improve_seo, add_related_links, rebuild_sitemap
+  add_seo_meta.main()
+  improve_seo.main()
+  add_related_links.main()
+  add_structured_data.main()
   add_engage.main()
+  rebuild_sitemap.main()
  except Exception as e:
-  print('engage blocks not refreshed:',e)
+  print('SEO blocks not refreshed:',e)
 if __name__=='__main__': main()

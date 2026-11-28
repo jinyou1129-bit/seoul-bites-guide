@@ -4,7 +4,7 @@
 python3 scripts/add_engage.py
 Idempotent: the block between the engage markers is replaced on every run.
 """
-from html import escape as esc
+from html import escape as esc, unescape
 from pathlib import Path
 import re
 
@@ -49,7 +49,7 @@ def main() -> None:
         if not path.exists():
             continue
         html = path.read_text(encoding='utf-8')
-        title = text_of(html, r'<title>(.*?)</title>')
+        title = unescape(text_of(html, r'<title>(.*?)</title>'))
         title = re.sub(r'\s*[|\-]\s*Seoul Bites Guide\s*$', '', title)
         desc = text_of(html, r'<meta name="description" content="([^"]*)"')
         pages[slug] = {'label': label, 'cat': cat, 'title': title, 'desc': desc}
@@ -58,7 +58,7 @@ def main() -> None:
     for path in sorted(ROOT.glob('*.html')):
         if path.name not in pages and path.name not in NON_GUIDE:
             html = path.read_text(encoding='utf-8')
-            title = text_of(html, r'<title>(.*?)</title>')
+            title = unescape(text_of(html, r'<title>(.*?)</title>'))
             title = re.sub(r'\s*[|\-]\s*Seoul Bites Guide\s*$', '', title)
             pages[path.name] = {'label': 'Street Food', 'cat': 'street', 'title': title,
                                 'desc': text_of(html, r'<meta name="description" content="([^"]*)"')}

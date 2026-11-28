@@ -4,7 +4,7 @@
 Run from anywhere: python3 scripts/add_seo_meta.py
 Idempotent: re-running replaces the tags it wrote instead of duplicating them.
 """
-from html import escape as esc
+from html import escape as esc, unescape
 from pathlib import Path
 import re
 
@@ -93,14 +93,14 @@ def main() -> None:
             head = re.sub(r'<title>.*?</title>', '<title>' + TITLE_FIX[name] + '</title>', head, count=1, flags=re.S)
 
         title_m = re.search(r'<title>(.*?)</title>', head, re.S)
-        title = title_m.group(1).strip() if title_m else SITE
+        title = unescape(title_m.group(1).strip()) if title_m else SITE
         desc_m = re.search(r'<meta[^>]+name="description"[^>]+content="([^"]*)"', head, re.I)
         if not desc_m:
             desc_m = re.search(r'<meta[^>]+content="([^"]*)"[^>]+name="description"', head, re.I)
         if not desc_m:
             print('no description, skipped:', name)
             continue
-        description = desc_m.group(1).strip()
+        description = unescape(desc_m.group(1).strip())
 
         for pattern in REMOVE:
             head = pattern.sub('', head)
