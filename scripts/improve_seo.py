@@ -111,7 +111,17 @@ def item_list(name, html):
             return block
         return m.group(0)
     html = IL_RE.sub('', html)
-    return re.sub(r'<script type="application/ld\+json">(.*?)</script>', repl, html, count=1, flags=re.S)
+    replaced = [False]
+
+    def repl_tracked(m):
+        out = repl(m)
+        if out != m.group(0):
+            replaced[0] = True
+        return out
+    html = re.sub(r'<script type="application/ld\+json">(.*?)</script>', repl_tracked, html, flags=re.S)
+    if not replaced[0]:
+        html = html.replace('</head>', block + '</head>', 1)
+    return html
 
 
 def family(html):
